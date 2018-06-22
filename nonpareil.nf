@@ -49,7 +49,7 @@ process nonpareil {
     file "${input.baseName}.npo" into nonpareil
 
     """
-    nonpareil -f fastq -s $input -b "${input.baseName}" -t 12
+    nonpareil -f fastq -T 'alignment' -s $input -b "${input.baseName}" -t 12
     """
 }
 
